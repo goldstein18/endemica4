@@ -30,11 +30,18 @@
 		p, b{
             color:#0a4231;
         }
+		#scrollToTop {
+			position: fixed;
+				bottom: 20px;
+				right: 20px;
+				cursor: pointer;
+
+		}
 	</style>
 </head>
 
 <body>
-
+	<a href="#" id="scrollToTop"><img src="new_icons/ancla.png" alt="Scroll to Top" width="50px"></a>
 	<div class="onath-header-top">
 		<div class="container">
 		</div>
@@ -322,6 +329,13 @@ El Usuario reconoce que los cargos que se realicen a tarjetas de débito o créd
 	<script src="assets/js/jquery.meanmenu.js"></script>
 	<script src="assets/js/ajax-mail.js"></script>
 	<script src="assets/js/theme.js"></script>
+	<script>document.getElementById('scrollToTop').addEventListener('click', function(e) {
+		e.preventDefault();
+		window.scrollTo({
+		  top: 0,
+		  behavior: 'smooth'
+		});
+	  });</script>
 
 
 	<style>
