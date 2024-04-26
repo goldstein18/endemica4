@@ -92,16 +92,18 @@
 
 		.onath-main-menu {
 			position: fixed;
-  			top: 0;
+  			top: 0!important;
   			width: 100%;
   			z-index: 1000;
+		
+		
 		}
 
 		.fas fa-star:active, i {
 			color: #00ae79 !important; 
 			margin-left:10px !important;
 			position: relative;
-			left:30px;
+		
 		}
 
 		.burguer {
@@ -152,6 +154,9 @@
 				cursor: pointer;
 			 	z-index:5000;
 
+		}
+		.mean-container .mean-bar::before {
+			content: none;
 		}
 	</style>
 	
@@ -213,8 +218,10 @@
 <!-- MOBILE MENU AREA -->
 <div class="mbm hidden-md hidden-lg header_area main-menu-area">
 	<div class="menu_area mobile-menu"> <span class="burguer"></span>
+		
 		<nav>						
 			<ul class="sub-menu">
+				<img  class="mean-container mean-bar menuimage" src="/new_icons/menuimage2.png">
 				<li>
 					<a id="bolder" href="index.html">Inicio</a>
 				</li>
@@ -235,8 +242,8 @@
 	<div class="container-fluid pdlr0">
 		<div class="row">
 			<div class="col-lg-12">
-				<div class="em-nivo-slider-wrapper">			
-					<div id="mainSlider_id2" class="nivoSlider em-slider-image" style="display: flex; justify-content: center; align-items: center; max-height: 85vh;">
+				<div style="margin-top: 9% !important;"class="em-nivo-slider-wrapper">			<!-- original slider 85hv-->
+					<div id="mainSlider_id2" class="nivoSlider em-slider-image" style="display: flex; justify-content: center; align-items: center; max-height: 65vh;">
 						<img src="img/bg2.gif" alt="" title="#htmlcaption1_743" >	  
 						<!-- <img src="assets/images & icons/Nosotros Assets/Foto superior.png" alt=""  title="#htmlcaption1_744" />		   -->
 					</div>				   
@@ -287,22 +294,22 @@
 					</div>
 				</div> -->
 				
-				<div class="exoert-icon" style="margin-top: 40px; padding-left:20px;">
+				<div class="exoert-icon" style="margin-top: 40px; padding-left:20px;border:2px solid red; width:70%; text-align: justify; margin:0 auto;">
 					<p style="color: #0A4231; font-size: 20px;">Medir el impacto social de tu organización es crucial para:</p>
 					<ul class="icon-list-items">
 						<li>
 							<span><i class="icofont-verification-check"></i></span>
-							<span class="icon-list-text">Evaluar si se están cumpliendo los objetivos y <br>
+							<span class="icon-list-text">Evaluar si se están cumpliendo los objetivos y 
 								detectar las áreas de mejora.</span>
 						</li><br>
 						<li>
 							<span><i class="icofont-verification-check"></i></span>
-							<span class="icon-list-text">Contribuir al posicionamiento de tu marca, y conectar <br>
+							<span class="icon-list-text">Contribuir al posicionamiento de tu marca, y conectar
 								de mejor manera con tus clientes e inversionistas.</span>
 						</li><br>
 						<li>
 							<span><i class="icofont-verification-check"></i></span>
-							<span class="icon-list-text">Mejorar la gestión de tu organización, minimizando <br>
+							<span class="icon-list-text">Mejorar la gestión de tu organización, minimizando 
 								los riesgos y maximizando los efectos positivos.</span>
 						</li>
 						<br>
@@ -337,7 +344,7 @@ que los proyectos de alto impacto social generan.
 						<h3 style="color: #ED0678; font-size: 50px; text-transform:none ;">Sobre Endémica
 						</h3>	<h2 style="color: #0A4231; font-family: 'fig2';">+10 AÑOS DE EXPERIENCIA
 						</h2>
-						<p>  We are a company dedicated to ensuring the adoption of social programs and initiatives by building communities for social impact generation. We work to ensure the sustainability of each project through three lines of action: design, management coordination, and impact evaluation.</p>
+						<p style="color: #0A4231; text-align: justify; font-family: 1rem !important;">Somos una empresa dedicada a garantizar la adopción de programas e iniciativas sociales mediante la construcción de comunidades para la generación de impacto social. Trabajamos asegurando la sustentabilidad y la sostenibilidad de cada proyecto por medio de tres líneas de acción: diseño, coordinación de la gestión y evaluación de impacto. </p>
 					</div>
 				</div>
 			</div>
@@ -418,7 +425,7 @@ que los proyectos de alto impacto social generan.
 					<div class="service-item all_color_service text-left">
 						<div class="service_top_image"></div>
 						<div class="text_box all_icon_color">
-							<img src="img/f_ico.png" alt="">
+							<img src="nuevos/g1.png"">
 							<h3 style="font-family: fig2; font-weight: bold; color: #0A4231; text-transform: none;">Auditoría de Impacto
 							</h3>		
 							<p style="color: #0A4231;">Conoce una perspectiva objetiva
@@ -438,7 +445,7 @@ que los proyectos de alto impacto social generan.
 					<div class="service-item all_color_service text-left">
 						<div class="service_top_image"></div>
 						<div class="text_box all_icon_color">
-							<img src="img/s_ico.png" alt="">
+							<img src="nuevos/g2.png" alt="">
 							<h3 style="font-family: fig2; font-weight: bold; color: #0A4231; text-transform: none;">Consultoría</h3>		
 							<p style="color: #0A4231;">Sesiones 1-a-1 sobre todos los temas
 								referentes a Impacto Social, Modelo
@@ -457,7 +464,7 @@ que los proyectos de alto impacto social generan.
 					<div class="service-item all_color_service text-left">
 						<div class="service_top_image"></div>
 						<div class="text_box all_icon_color">
-							<img src="img/t_ico.png" alt="">
+							<img src="nuevos/g3.png" alt="">
 							<h3 style="font-family: fig2; font-weight: bold; color: #0A4231; text-transform: none;">Social Marketing</h3>		
 							<p style="color: #0A4231;">Rediseñamos la forma en la que
 								comunicas tu impacto social para
@@ -475,7 +482,7 @@ que los proyectos de alto impacto social generan.
 					<div class="service-item all_color_service text-left">
 						<div class="service_top_image"></div>
 						<div class="text_box all_icon_color">
-							<img src="img/h_ico.png" alt="">
+							<img src="nuevos/g4.png" alt="">
 							<h3 style="font-family: fig2; font-weight: bold; color: #0A4231; text-transform: none;">Capacitación </h3>		
 							<p style="color: #0A4231;">Acercamos el impacto social a todos
 								los niveles de las organizaciones a
@@ -790,9 +797,12 @@ que los proyectos de alto impacto social generan.
 </div>
 
 	<style>
-		.slick-prev, .slick-next{
+		.slick-prev, .slick-next, .slick-arrow{
 			background-color: #00ae79!important;
-			display: none;
+			display: none !important;
+		}
+		.testomonial-slide .slick-prev {
+			display: none !important;
 		}
 		
 	</style>			
